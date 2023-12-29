@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+body{
+   font-family: 'Averia Sans Libre', sans-serif;
+   margin: 0;
+}
+
+header{
+   padding: 60px;
+   text-align: center;
+   background-color: #4c6e7e;
+   color:#000;
+}
+
+nav{
+   display: flex;
+   background-color: #333;
+}
+nav a{
+   color: #fff;
+   padding: 15px 20px;
+   text-decoration: none;
+   text-align: center;
+}
+nav a:hover{
+   background-color: #ddd;
+   color: #000;
+   cursor: pointer;
+}
+
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.sidebar{
+   flex: 30%;
+   background-color: #acd1e3;
+   padding: 20px;
+}
+a i {
+   transition: all 0.3s ease-in-out;
+}
+
+a:hover i {
+   transform: scale(1.2); 
+}
+.main{
+   flex: 70%;
+   background-color: #ddd;
+   padding: 20px;
+}
+
+img{
+   background-color: #1ea4ac;
+   width: 100%;
+   padding: 2%;
+}
+footer{
+   padding: 20px;
+   text-align: center;
+   background-color: #4c6e7e;
+}
+
+@media (max-width: 769px){
+   .row,
+   nav{
+      flex-direction: column;
+   }
+}
